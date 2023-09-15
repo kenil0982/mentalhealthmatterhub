@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Chatbot</title>
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <form onsubmit="value1(event)">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+
+        <label for="age">Your Age:</label>
+        <input type="number" id="age" name="age" min="18" required>
+        <br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <br>
+
+        <label>Do you feel tired/fatigue?</label>
+        <input type="radio" id="tired" name="feelings0[]" value="Yes">
+        <label for="tired">Yes</label>
+        <input type="radio" id="not-tired" name="feelings9[]" value="No">
+        <label for="not-tired">No</label>
+        <br>
+
+        <label>Have you seen changes in behavior?</label>
+        <input type="radio" id="behavior-yes" name="changes8[]" value="Yes">
+        <label for="behavior-yes">Yes</label>
+        <input type="radio" id="behavior-no" name="changes7[]" value="No">
+        <label for="behavior-no">No</label>
+        <br>
+
+        <label>Have you seen changes in food cycle and sleep cycle?</label>
+        <input type="radio" id="food-sleep-yes" name="changes5[]" value="Yes">
+        <label for="food-sleep-yes">Yes</label>
+        <input type="radio" id="food-sleep-no" name="changes6[]" value="No">
+        <label for="food-sleep-no">No</label>
+        <br>
+
+        <label>Do you  have unwanted thoughts ?</label>
+        <input type="radio" id="tired" name="feelings1[]" value="Yes">
+        <label for="tired">Yes</label>
+        <input type="radio" id="not-tired" name="feelings[]" value="No">
+        <label for="not-tired">No</label>
+        <br>
+
+        <label>Do you feel lack of concentration and confidence ? </label>
+        <input type="radio" id="tired" name="feelings[]" value="Yes">
+        <label for="tired">Yes</label>
+        <input type="radio" id="not-tired" name="feelings4[]" value="No">
+        <label for="not-tired">No</label>
+        <br>
+
+        <label>Do you feel agressiveness ?</label>
+        <input type="radio" id="tired" name="feelings2[]" value="Yes">
+        <label for="tired">Yes</label>
+        <input type="radio" id="not-tired" name="feelings3[]" value="No">
+        <label for="not-tired">No</label>
+        <br>
+        
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+    <div id="value"></div>
+    <script>
+        async function value1(event) {
+            event.preventDefault();
+            var name = document.getElementById("name").value;
+            var mail = document.getElementById("email").value;
+            var age = document.getElementById("age").value;
+            var message = document.getElementById("value");
+
+            if (age > 40) {
+                alert("Hello " + name);
+             message.innerHTML= "hello my age is" + age;
+             if (tiredRadios[i].checked) {
+                print"gdhsb";
+                break;
+            }
+        }
+            }
+        
+        }
+    </script>
+</body>
+</html>
